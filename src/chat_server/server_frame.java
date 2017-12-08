@@ -215,16 +215,12 @@ public class server_frame extends javax.swing.JFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void b_endActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_endActionPerformed
-        try 
-        {
-            Thread.sleep(5000);                 //5000 milliseconds is five second.
-        } 
-        catch(InterruptedException ex) {Thread.currentThread().interrupt();}
-        
+    	   
         tellEveryone("Server:is stopping and all users will be disconnected.\n:Chat");
         ta_chat.append("Server stopping... \n");
         
         ta_chat.setText("");
+        System.exit(0);
     }//GEN-LAST:event_b_endActionPerformed
 
     private void b_startActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_startActionPerformed
