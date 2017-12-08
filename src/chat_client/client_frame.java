@@ -723,13 +723,25 @@ public class client_frame extends javax.swing.JFrame
 
     private void helpMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpMenuItemActionPerformed
         JOptionPane.showMessageDialog(client_frame.this,
-			                  "",
+        				"You must know the port number of server to connect the server\n"
+                        +"Your username should be unique. Program will send an error if name already existed\n"
+                        +"You can select p and q value otherwise program will generate automatically\n"
+                        +"You can send message all clients or spcific one or more than one clients\n"
+                        +"If you want to send message all clients then type the message and click on Send button\n"
+                        +"If you want to send message specific/particular one client then follow the format which is given below:\n"
+                        +"@clientname yourmessage\n"
+                        +"Example: @client1 sample message which sends to client1\n"
+                        +"So type @ first, then without no space type client name, then give a space and finally type your message\n"
+                        +"If you want to send message specific/particular clients that's mean number of client more than one\n"
+                        +"then follow the format whic is given below\n"
+                        +"@clientname1@clientname2@clientname3 yourmessage\n"
+                        +"Example: @client1@client2 sample message which sends to client1 and client2\n",
 			                  "HELP", JOptionPane.PLAIN_MESSAGE);
     }//GEN-LAST:event_helpMenuItemActionPerformed
 
     private void aboutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutMenuItemActionPerformed
         JOptionPane.showMessageDialog(client_frame.this,
-	                  "Sudoku, 5th project of CS342.\n"
+	                  "Networked Chat with RSA Encryption/Decryption, project of CS342.\n"
 	                          + "1. Youlho Cha, ycha8\n"
 	                          + "2. Viktor Partyka, vparty2\n"
 	                          + "3. Saurav Das, sdas31\n",
