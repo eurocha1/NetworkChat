@@ -251,13 +251,16 @@ public class server_frame extends javax.swing.JFrame
 
     private void helpMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpMenuItemActionPerformed
         JOptionPane.showMessageDialog(server_frame.this,
-			                  "",
+        				"This is Server class.\n"
+                        +"Start -> to begin, then user can port number\n"
+                        +"Online Users -> to see all the clients' name\n"
+                        +"End -> Exit\n",
 			                  "HELP", JOptionPane.PLAIN_MESSAGE);
     }//GEN-LAST:event_helpMenuItemActionPerformed
 
     private void aboutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutMenuItemActionPerformed
         JOptionPane.showMessageDialog(server_frame.this,
-	                  "Sudoku, 5th project of CS342.\n"
+	                  "Networked Chat with RSA Encryption/Decryption, project of CS342.\n"
 	                          + "1. Youlho Cha, ycha8\n"
 	                          + "2. Viktor Partyka, vparty2\n"
 	                          + "3. Saurav Das, sdas31\n",
